@@ -1,0 +1,5 @@
+Program([
+	VarDecl(a, BooleanType, BooleanLit(True))
+	FuncDecl(add, VoidType, [Param(i, FloatType)], None, BlockStmt([ReturnStmt(Id(i))]))
+	FuncDecl(inc, VoidType, [OutParam(n, IntegerType), InheritParam(delta, IntegerType), InheritOutParam(hallo, AutoType)], add, BlockStmt([AssignStmt(Id(n), BinExpr(+, BinExpr(+, Id(n), Id(delta)), Id(hallo))), AssignStmt(Id(n), BinExpr(-, BinExpr(-, Id(n), Id(delta)), Id(hallo))), AssignStmt(Id(n), BinExpr(*, BinExpr(*, Id(n), Id(delta)), Id(hallo))), AssignStmt(Id(n), BinExpr(/, BinExpr(/, Id(n), Id(delta)), Id(hallo))), AssignStmt(Id(n), BooleanLit(True)), AssignStmt(Id(n), BinExpr(+, BinExpr(-, BinExpr(+, BinExpr(%, Id(n), IntegerLit(1)), Id(hallo)), IntegerLit(1)), IntegerLit(2))), AssignStmt(Id(n), BinExpr(&&, BinExpr(&&, Id(n), Id(delta)), Id(hallo))), AssignStmt(Id(n), BinExpr(||, BinExpr(||, Id(n), Id(delta)), Id(hallo))), AssignStmt(Id(n), BinExpr(::, Id(n), Id(n))), AssignStmt(Id(n), BinExpr(+, Id(n), FuncCall(add, [Id(delta)]))), AssignStmt(Id(n), ArrayCell(a, [IntegerLit(1), ArrayCell(a, [IntegerLit(1), ArrayCell(a, [IntegerLit(1), IntegerLit(2)])])])), ReturnStmt(Id(n))]))
+])

@@ -1,0 +1,8 @@
+oo: function integer () {
+            do {
+                a: string = "My name is Chinh";
+                b: float = "U are U"::"I am Me";
+                i=i+1;
+            }
+            while (i<10);
+        }

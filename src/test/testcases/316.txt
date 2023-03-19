@@ -1,0 +1,3 @@
+  sum: function integer(a:integer,b:integer,c:integer){
+            return a+b+c;
+            } 

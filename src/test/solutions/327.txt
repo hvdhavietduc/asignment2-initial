@@ -1,0 +1,5 @@
+Program([
+	VarDecl(s1, StringType, StringLit(gia huy))
+	VarDecl(s2, StringType, StringLit(qua mon))
+	FuncDecl(main, VoidType, [], None, BlockStmt([VarDecl(s3, StringType, BinExpr(::, Id(s1), Id(s2))), ReturnStmt()]))
+])

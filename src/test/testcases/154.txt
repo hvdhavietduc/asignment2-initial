@@ -1,0 +1,9 @@
+
+            calculateExpApproximation: function float(n: integer) {
+            result = 1.0;
+            term = 1.0;
+            for ( i = 1, i <= n, i + 1) {
+                term = (1.0 / n);
+                result = term;
+            }
+            return result;}

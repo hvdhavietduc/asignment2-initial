@@ -1,0 +1,3 @@
+Program([
+	VarDecl(arr, ArrayType([2, 3], IntegerType))
+])

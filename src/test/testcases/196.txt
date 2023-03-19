@@ -1,0 +1,5 @@
+func: function float () {
+            a = 1;
+            b = 2;
+        }
+        

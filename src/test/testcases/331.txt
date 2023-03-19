@@ -1,0 +1,7 @@
+  square: function integer(a:integer){
+            return a*a;
+            }
+            main: function void(){
+                b:integer=square(4);
+                return;
+            }

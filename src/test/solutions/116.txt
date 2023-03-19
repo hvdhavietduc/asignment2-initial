@@ -1,0 +1,4 @@
+Program([
+	VarDecl(a, BooleanType, FuncCall(foo, [IntegerLit(1)]))
+	FuncDecl(a, IntegerType, [], None, BlockStmt([ReturnStmt(IntegerLit(5))]))
+])

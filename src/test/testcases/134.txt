@@ -1,0 +1,21 @@
+a: float = 1.0;
+                b: float = -5.0;
+                c: float = 6.0;
+                delta: float = b * b - 4 * a * c;
+                x1: float;
+                x2: float;
+                main: function void(){
+                    if (delta > 0) {
+                        x1 = (-b + sqrt(delta)) / (2 * a);
+                        x2 = (-b - sqrt(delta)) / (2 * a);
+                        printf("The equation has two real roots: %.2f and %.2f\n", x1, x2);
+                    } else if (delta == 0) {
+                        x1 = -b / (2 * a);
+                        printf("The equation has one real root: %.2f\n", x1);
+                    } else {
+                        real_part: float = -b / (2 * a);
+                        imaginary_part: float = sqrt(-delta) / (2 * a);
+                        printf("The equation has two complex roots: %.2f + %.2fi and %.2f - %.2fi\n", real_part, imaginary_part, real_part, imaginary_part);
+                    }
+                }
+        

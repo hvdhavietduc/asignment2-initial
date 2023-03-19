@@ -1,0 +1,5 @@
+Program([
+	VarDecl(a, BooleanType, BinExpr(+, Id(x), IntegerLit(1)))
+	FuncDecl(func, IntegerType, [], None, BlockStmt([DoWhileStmt(BinExpr(==, Id(a), IntegerLit(0)), BlockStmt([AssignStmt(Id(a), BinExpr(+, Id(a), IntegerLit(1))), AssignStmt(Id(x), FuncCall(foo, [IntegerLit(2), BinExpr(+, IntegerLit(3), IntegerLit(4))])), CallStmt(printf, Id(a)), IfStmt(BinExpr(>, Id(a), IntegerLit(5)), BlockStmt([AssignStmt(Id(x), BinExpr(+, Id(a), IntegerLit(5)))]), BlockStmt([AssignStmt(Id(x), BinExpr(+, Id(a), IntegerLit(6)))]))]))]))
+	FuncDecl(main, AutoType, [Param(a, IntegerType), Param(arr, ArrayType([2, 3], FloatType))], None, BlockStmt([ReturnStmt(IntegerLit(1))]))
+])

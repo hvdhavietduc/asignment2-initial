@@ -1,0 +1,4 @@
+Program([
+	FuncDecl(fibonacci, IntegerType, [Param(n, IntegerType)], None, BlockStmt([IfStmt(BinExpr(<=, Id(n), IntegerLit(1)), BlockStmt([ReturnStmt(Id(n))]), BlockStmt([ReturnStmt(BinExpr(+, FuncCall(fibonacci, [BinExpr(-, Id(n), IntegerLit(1))]), FuncCall(fibonacci, [BinExpr(-, Id(n), IntegerLit(2))])))]))]))
+	FuncDecl(main, VoidType, [], None, BlockStmt([AssignStmt(Id(n), IntegerLit(10)), AssignStmt(Id(result), FuncCall(fibonacci, [Id(n)])), CallStmt(printInt, Id(result))]))
+])

@@ -1,0 +1,5 @@
+ main:function boolean()
+            {
+                a:boolean=1==1&&1;
+                return a;
+            } 

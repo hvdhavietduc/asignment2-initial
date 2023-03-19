@@ -1,0 +1,9 @@
+Program([
+	VarDecl(a, FloatType, FloatLit(1.0))
+	VarDecl(b, FloatType, UnExpr(-, FloatLit(5.0)))
+	VarDecl(c, FloatType, FloatLit(6.0))
+	VarDecl(delta, FloatType, BinExpr(-, BinExpr(*, Id(b), Id(b)), BinExpr(*, BinExpr(*, IntegerLit(4), Id(a)), Id(c))))
+	VarDecl(x1, FloatType)
+	VarDecl(x2, FloatType)
+	FuncDecl(main, VoidType, [], None, BlockStmt([IfStmt(BinExpr(>, Id(delta), IntegerLit(0)), BlockStmt([AssignStmt(Id(x1), BinExpr(/, BinExpr(+, UnExpr(-, Id(b)), FuncCall(sqrt, [Id(delta)])), BinExpr(*, IntegerLit(2), Id(a)))), AssignStmt(Id(x2), BinExpr(/, BinExpr(-, UnExpr(-, Id(b)), FuncCall(sqrt, [Id(delta)])), BinExpr(*, IntegerLit(2), Id(a)))), CallStmt(printf, StringLit(The equation has two real roots: %.2f and %.2f\n), Id(x1), Id(x2))]), IfStmt(BinExpr(==, Id(delta), IntegerLit(0)), BlockStmt([AssignStmt(Id(x1), BinExpr(/, UnExpr(-, Id(b)), BinExpr(*, IntegerLit(2), Id(a)))), CallStmt(printf, StringLit(The equation has one real root: %.2f\n), Id(x1))]), BlockStmt([VarDecl(real_part, FloatType, BinExpr(/, UnExpr(-, Id(b)), BinExpr(*, IntegerLit(2), Id(a)))), VarDecl(imaginary_part, FloatType, BinExpr(/, FuncCall(sqrt, [UnExpr(-, Id(delta))]), BinExpr(*, IntegerLit(2), Id(a)))), CallStmt(printf, StringLit(The equation has two complex roots: %.2f + %.2fi and %.2f - %.2fi\n), Id(real_part), Id(imaginary_part), Id(real_part), Id(imaginary_part))])))]))
+])

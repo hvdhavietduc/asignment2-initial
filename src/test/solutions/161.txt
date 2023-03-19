@@ -1,0 +1,4 @@
+Program([
+	FuncDecl(contains, BooleanType, [Param(arr, ArrayType([10], IntegerType)), Param(target, IntegerType)], None, BlockStmt([ForStmt(AssignStmt(Id(i), IntegerLit(0)), BinExpr(<, Id(i), IntegerLit(10)), BinExpr(+, Id(i), IntegerLit(1)), BlockStmt([IfStmt(BinExpr(==, ArrayCell(arr, [Id(i)]), Id(target)), BlockStmt([ReturnStmt(BooleanLit(True))]))])), ReturnStmt(BooleanLit(False))]))
+	FuncDecl(main, VoidType, [], None, BlockStmt([AssignStmt(Id(arr), ArrayLit([IntegerLit(5), IntegerLit(2), IntegerLit(8), IntegerLit(4), IntegerLit(9), IntegerLit(1), IntegerLit(3), IntegerLit(7), IntegerLit(6), IntegerLit(0)])), IfStmt(FuncCall(contains, [Id(arr), IntegerLit(4)]), BlockStmt([CallStmt(printString, StringLit(The array contains the target value))]), BlockStmt([CallStmt(printString, StringLit(The array does not contain the target value))]))]))
+])

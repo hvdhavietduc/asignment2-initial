@@ -1,0 +1,6 @@
+ main:function void () {
+            a:integer = 5;
+            if(a>=0) printInteger(a);
+            else return;
+            return;
+        }

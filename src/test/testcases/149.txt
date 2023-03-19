@@ -1,0 +1,11 @@
+func: function boolean () {
+            break;
+             do {
+        while (i % 10 == 0) {
+             x = 20;
+        }
+        if (n == 2) {
+            return 0;
+        } 
+    } while (i > 100);
+        }

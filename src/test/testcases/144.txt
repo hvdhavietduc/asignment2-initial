@@ -1,0 +1,1 @@
+x, y: array [1,1] of float = {2}, {"hello"};

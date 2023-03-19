@@ -1,0 +1,4 @@
+Program([
+	VarDecl(a, ArrayType([2], IntegerType))
+	FuncDecl(b, ArrayType([2], IntegerType), [], None, BlockStmt([ReturnStmt(Id(a))]))
+])

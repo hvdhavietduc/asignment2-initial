@@ -1,0 +1,4 @@
+Program([
+	FuncDecl(countWeatherType, ArrayType([5], IntegerType), [Param(weather, ArrayType([5], StringType)), Param(country, ArrayType([5], StringType))], None, BlockStmt([VarDecl(result, ArrayType([5], IntegerType)), ForStmt(AssignStmt(Id(i), IntegerLit(0)), BinExpr(<, Id(i), FuncCall(length, [Id(weather)])), BinExpr(+, Id(i), IntegerLit(1)), BlockStmt([IfStmt(BinExpr(||, BinExpr(==, ArrayCell(weather, [Id(i)]), StringLit(sunny)), BinExpr(==, ArrayCell(weather, [Id(i)]), StringLit(cloudy))), BlockStmt([AssignStmt(Id(result), BinExpr(+, Id(result), ArrayCell(country, [Id(i)])))]))])), ReturnStmt(Id(result))]))
+	FuncDecl(main, VoidType, [], None, BlockStmt([VarDecl(weather, ArrayType([5], StringType), ArrayLit([StringLit(sunny), StringLit(cloudy), StringLit(rainy)])), VarDecl(country, ArrayType([5], StringType), ArrayLit([StringLit(Vietnam), StringLit(Thailand), StringLit(Malaysia)])), CallStmt(print, FuncCall(countWeatherType, [Id(weather), Id(country)]))]))
+])

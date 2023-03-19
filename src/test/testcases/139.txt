@@ -1,0 +1,15 @@
+sum: integer = 0;
+                i: integer = 0;
+                count: integer = 0;
+                main: function void(){
+                    while (count < 50) {
+                        if (i % 2 == 0) {
+                            sum = sum+ i;
+                            count = count+ 1;
+                        }
+                    i =i+ 1;
+                    }
+
+                    print("The sum of the first 50 even numbers is: " , sum);
+                }
+        

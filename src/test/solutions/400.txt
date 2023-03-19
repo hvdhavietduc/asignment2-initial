@@ -1,0 +1,3 @@
+Program([
+	VarDecl(arr, ArrayType([5], IntegerType), ArrayLit([UnExpr(-, UnExpr(-, UnExpr(-, IntegerLit(5)))), FuncCall(foo, []), BinExpr(&&, Id(a), Id(b))]))
+])

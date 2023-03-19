@@ -1,0 +1,15 @@
+
+           a: integer = 123;
+                b: integer = 456;
+                s1 : string = "gia huy";
+                s2 : string = "thuc tap";
+                s3 : string = "thanh cong";
+                inc: function integer (n: integer, delta: integer) {
+                    n = n + delta;
+                    return n;
+                }
+                main: function void() {
+                    s3 : string = s1 :: s2;
+                    if (n != 123) return;
+                }
+        

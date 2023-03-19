@@ -1,0 +1,3 @@
+Program([
+	FuncDecl(main, VoidType, [], None, BlockStmt([CallStmt(printString, StringLit(Hay nhap mon hoc ma ban yeu thich)), VarDecl(a, FloatType, FuncCall(readFloat, [])), CallStmt(printString, StringLit(So diem ma ban muon dat duoc cua mon hoc do)), ReturnStmt()]))
+])

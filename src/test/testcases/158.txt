@@ -1,0 +1,17 @@
+romanToInt : function integer (s : string) {
+    n = length(s);
+    result = 0;
+    for (i = 0, i < n, i + 1) {
+        if ((i > 0) && (roman[s[i]] > roman[s[i - 1]])) {
+            result = result + roman[s[i]] - 2 * roman[s[i - 1]];
+        } else {
+            result = result + roman[s[i]];
+        }
+    }
+    return result;
+}
+
+main: function void () {
+    s = "MCMXCIV";
+    printInt(romanToInt(s));
+}

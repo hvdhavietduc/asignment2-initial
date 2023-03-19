@@ -1,0 +1,7 @@
+a: integer = 10.0;
+            main: function void(){
+                for(i=0,i<3,i+1){
+                    a= a+1;
+                }
+            }
+                

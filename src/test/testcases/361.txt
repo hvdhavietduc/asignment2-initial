@@ -1,0 +1,4 @@
+ a:array [3] of integer;
+           main: function integer () {
+           return a[1];
+           }

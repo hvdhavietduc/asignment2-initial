@@ -1,0 +1,10 @@
+ fact:function integer (n:integer){
+            if(n==1) return n;
+            else return n*fact(n-1);
+        }
+        main:function void () {
+            a:integer = 5;
+            if(a>=0) a=fact(5);
+            else return;
+            return;
+        }

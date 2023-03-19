@@ -1,0 +1,4 @@
+  test: function float () {
+            a:float =1.2+2.3;
+            return a;
+           } 

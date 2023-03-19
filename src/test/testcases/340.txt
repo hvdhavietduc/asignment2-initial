@@ -1,0 +1,7 @@
+  main:function void(){
+                while(true)
+                {
+                    printString("Nguyen Luong Gia Huy");
+                }
+                return;
+            }

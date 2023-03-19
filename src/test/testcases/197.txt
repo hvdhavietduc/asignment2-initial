@@ -1,0 +1,6 @@
+func: function string () {
+             for (i = 0, i < 1, i - 1) 
+             {
+                break;
+             }
+        }

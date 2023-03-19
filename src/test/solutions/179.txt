@@ -1,0 +1,4 @@
+Program([
+	FuncDecl(change, IntegerType, [Param(amount, IntegerType), Param(coins, ArrayType([4], IntegerType))], None, BlockStmt([VarDecl(dp, ArrayType([5], IntegerType)), AssignStmt(ArrayCell(dp, [IntegerLit(0)]), IntegerLit(1)), ForStmt(AssignStmt(Id(i), IntegerLit(0)), BinExpr(<, Id(i), FuncCall(length, [Id(coins)])), BinExpr(+, Id(i), IntegerLit(1)), BlockStmt([ForStmt(AssignStmt(Id(j), ArrayCell(coins, [Id(i)])), BinExpr(<=, Id(j), Id(amount)), BinExpr(+, Id(j), IntegerLit(1)), BlockStmt([AssignStmt(ArrayCell(dp, [Id(j)]), BinExpr(+, ArrayCell(dp, [Id(j)]), ArrayCell(dp, [BinExpr(-, Id(j), ArrayCell(coins, [Id(i)]))])))]))])), ReturnStmt(ArrayCell(dp, [Id(amount)]))]))
+	FuncDecl(main, VoidType, [], None, BlockStmt([AssignStmt(Id(amount), IntegerLit(5)), AssignStmt(Id(coins), ArrayLit([IntegerLit(1), IntegerLit(2), IntegerLit(5)])), CallStmt(printInt, FuncCall(change, [Id(amount), Id(coins)]))]))
+])

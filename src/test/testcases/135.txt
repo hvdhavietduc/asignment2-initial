@@ -1,0 +1,62 @@
+// Function to calculate the factorial of a positive integer
+                     factorial: function integer(n: integer) {
+                        if ((n == 0 )|| (n == 1)) {
+                            return 1;
+                        } else {
+                            return n * factorial(n - 1);
+                        }
+                    }
+
+                    // Function to calculate the nth Fibonacci number
+                    fibonacci: function integer(n: integer) {
+                        if ((n == 0) || (n == 1)) {
+                            return n;
+                        } else {
+                            return fibonacci(n - 1) + fibonacci(n - 2);
+                        }
+                    }
+
+                    // Function to calculate the sum of a geometric series
+                     geometric_sum: function integer(a: float, r: float, n: integer) {
+                        if (r == 1) {
+                            return a * n;
+                        } else {
+                            return a * (1 - pow(r, n)) / (1 - r);
+                        }
+                    }
+
+                    // Function to calculate the roots of a quadratic equation
+                    quadratic_roots : function integer(a: float, b: float, c: float) {
+                        delta: float = b * b - 4 * a * c;
+                        x1: float;
+                        x2: float;
+
+                        if (delta > 0) {
+                            x1 = (-b + sqrt(delta)) / (2 * a);
+                            x2 = (-b - sqrt(delta)) / (2 * a);
+                            printf("The equation has two real roots: %.2f and %.2f\n", x1, x2);
+                        } else if (delta == 0) {
+                            x1 = -b / (2 * a);
+                            printf("The equation has one real root: %.2f\n", x1);
+                        } else {
+                            real_part: float = -b / (2 * a);
+                            imaginary_part: float = sqrt(-delta) / (2 * a);
+                            printf("The equation has two complex roots: %.2f + %.2fi and %.2f - %.2fi\n", real_part, imaginary_part, real_part, imaginary_part);
+                        }
+                    }
+
+                    // Main function
+                    main: function void() {
+                        // Calculate the factorial of 5
+                        printf("The factorial of 5 is: %d\n", factorial(5));
+
+                        // Calculate the 10th Fibonacci number
+                        printf("The 10th Fibonacci number is: %d\n", fibonacci(10));
+
+                        // Calculate the sum of the first 5 terms of the geometric series with a = 1 and r = 2
+                        printf("The sum of the first 5 terms of the geometric series with a = 1 and r = 2 is: %.2f\n", geometric_sum(1, 2, 5));
+
+                        // Find the roots of the quadratic equation x^2 - 5x + 6 = 0
+                        quadratic_roots(1, -5, 6);
+                    }
+        

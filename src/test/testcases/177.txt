@@ -1,0 +1,7 @@
+
+        program: function void () {
+            a: array[3] of integer = {1, 2, 3};
+            b: array[2,2] of integer = {{1, 2}, {3, 4}};
+            c: array[4] of float;
+        }
+        

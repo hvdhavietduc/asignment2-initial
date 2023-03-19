@@ -1,0 +1,5 @@
+  s1: string = "gia huy";
+            s2: string = "qua mon";
+            main: function void(){
+            s3: string = s1::s2;
+            return;}

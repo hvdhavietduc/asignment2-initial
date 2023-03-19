@@ -1,0 +1,3 @@
+Program([
+	VarDecl(lisa, ArrayType([2], IntegerType), BinExpr(+, UnExpr(-, IntegerLit(1)), IntegerLit(2)))
+])

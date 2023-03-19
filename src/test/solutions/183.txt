@@ -1,0 +1,4 @@
+Program([
+	FuncDecl(topKFrequent, ArrayType([5], IntegerType), [Param(nums, ArrayType([5], IntegerType)), Param(k, IntegerType)], None, BlockStmt([VarDecl(result, ArrayType([5], IntegerType)), ForStmt(AssignStmt(Id(i), IntegerLit(0)), BinExpr(<, Id(i), FuncCall(length, [Id(nums)])), BinExpr(+, Id(i), IntegerLit(1)), BlockStmt([IfStmt(BinExpr(>, ArrayCell(nums, [Id(i)]), Id(k)), BlockStmt([AssignStmt(Id(result), BinExpr(+, Id(result), ArrayCell(nums, [Id(i)])))]))])), ReturnStmt(Id(result))]))
+	FuncDecl(main, VoidType, [], None, BlockStmt([VarDecl(nums, ArrayType([5], IntegerType), ArrayLit([IntegerLit(1), IntegerLit(1), IntegerLit(1), IntegerLit(2), IntegerLit(2), IntegerLit(3)])), VarDecl(k, IntegerType, IntegerLit(2)), CallStmt(print, FuncCall(topKFrequent, [Id(nums), Id(k)]))]))
+])

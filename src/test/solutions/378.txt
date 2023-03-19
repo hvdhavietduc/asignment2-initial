@@ -1,0 +1,4 @@
+Program([
+	VarDecl(a, IntegerType, BinExpr(&&, BinExpr(&&, Id(aa), Id(bb)), Id(cc)))
+	FuncDecl(fact, IntegerType, [OutParam(x, StringType)], None, BlockStmt([AssignStmt(Id(a), ArrayCell(a, [IntegerLit(2), IntegerLit(3)])), AssignStmt(Id(b), ArrayLit([IntegerLit(1), IntegerLit(2), IntegerLit(3)]))]))
+])

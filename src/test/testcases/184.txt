@@ -1,0 +1,16 @@
+
+         countWeatherType : function array[5] of integer (weather : array[5] of string, country : array[5] of string) {
+             result : array[5] of integer;
+             for (i = 0, i < length(weather), i + 1) {
+                 if ((weather[i] == "sunny") || (weather[i] == "cloudy")) {
+                     result = result + country[i];
+                 }
+             }
+             return result;
+         }
+         main: function void () {
+             weather : array [5] of string = {"sunny", "cloudy", "rainy"};
+             country : array [5] of string = {"Vietnam", "Thailand", "Malaysia"};
+             print(countWeatherType(weather, country));
+         }
+         

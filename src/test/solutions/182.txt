@@ -1,0 +1,4 @@
+Program([
+	FuncDecl(flatten, ArrayType([10], IntegerType), [Param(arr, ArrayType([10], IntegerType))], None, BlockStmt([VarDecl(result, ArrayType([10], IntegerType)), ForStmt(AssignStmt(Id(i), IntegerLit(0)), BinExpr(<, Id(i), FuncCall(length, [Id(arr)])), BinExpr(+, Id(i), IntegerLit(1)), BlockStmt([IfStmt(BinExpr(==, FuncCall(typeof, [ArrayCell(arr, [Id(i)])]), StringLit(array)), BlockStmt([AssignStmt(Id(result), BinExpr(+, Id(result), FuncCall(flatten, [ArrayCell(arr, [Id(i)])])))]), BlockStmt([AssignStmt(Id(result), BinExpr(+, Id(result), ArrayCell(arr, [Id(i)])))]))])), ReturnStmt(Id(result))]))
+	FuncDecl(main, VoidType, [], None, BlockStmt([VarDecl(arr, ArrayType([10], IntegerType), ArrayLit([IntegerLit(1), IntegerLit(2), ArrayLit([IntegerLit(3), IntegerLit(4)]), IntegerLit(5), IntegerLit(6)])), CallStmt(print, FuncCall(flatten, [Id(arr)]))]))
+])

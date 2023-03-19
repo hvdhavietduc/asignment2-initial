@@ -1,0 +1,21 @@
+a: boolean = x + 1;
+                    func: function integer(){
+                        do {
+                            a = a+1;
+                            x = foo(2,3+4);
+                            printf(a);
+                            if(a>5){
+                                x = a +5;
+                            }
+                            else {
+                                x = a +6;
+                            }
+
+                        } 
+                        while(a==0);
+                    }
+                    main: function auto(a: integer, arr: array [2, 3] of float){
+                        arr[1+1] = a;
+                        return a[2];
+                    }
+                    

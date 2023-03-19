@@ -1,0 +1,3 @@
+
+            arr : array [5] of integer = {---5, foo(), a && b};
+        

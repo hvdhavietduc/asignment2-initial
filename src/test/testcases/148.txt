@@ -1,0 +1,10 @@
+func: function string () {
+            do {
+                
+                while( i - 1 == 0)
+                {
+                    x: integer = 10;
+                }
+            }
+            while ( i  > 100);
+        }

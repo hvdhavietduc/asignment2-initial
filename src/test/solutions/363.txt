@@ -1,0 +1,4 @@
+Program([
+	VarDecl(a, ArrayType([2, 3], IntegerType))
+	FuncDecl(main, IntegerType, [], None, BlockStmt([ReturnStmt(ArrayCell(a, [IntegerLit(1), IntegerLit(2)]))]))
+])

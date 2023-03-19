@@ -1,0 +1,6 @@
+a: integer = b;
+                   a: function float(x: integer){
+                        x = x+1;
+                        return x;
+                   } 
+        

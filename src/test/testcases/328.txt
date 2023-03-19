@@ -1,0 +1,7 @@
+  a: boolean = true;
+            test: function integer() {
+            b: integer;
+            if(a==true) b=10;
+            else b=20;
+            return b;
+            }

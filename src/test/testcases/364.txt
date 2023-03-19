@@ -1,0 +1,4 @@
+ a: array[2] of integer;
+           b: function array[2] of integer () {
+            return a;
+           }

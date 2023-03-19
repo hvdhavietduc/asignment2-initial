@@ -1,0 +1,8 @@
+   main:function void(){
+                do
+                {
+                    printString("Nguyen Luong Gia Huy");
+                }
+                while(true);
+                return;
+            }

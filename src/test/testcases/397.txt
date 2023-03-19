@@ -1,0 +1,7 @@
+
+       a : boolean = true;
+        inc: function void(x: integer, inherit y: integer, inherit out z: auto) {
+            x=y+z;
+            return;
+        }
+        

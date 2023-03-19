@@ -1,0 +1,7 @@
+Program([
+	FuncDecl(factorial, AutoType, [Param(n, IntegerType)], None, BlockStmt([IfStmt(BinExpr(<, Id(n), IntegerLit(0)), BlockStmt([ReturnStmt(UnExpr(-, IntegerLit(1)))]), IfStmt(BinExpr(==, Id(n), IntegerLit(0)), BlockStmt([ReturnStmt(IntegerLit(1))]), BlockStmt([VarDecl(fact, IntegerType, IntegerLit(1)), VarDecl(i, IntegerType, IntegerLit(1)), WhileStmt(BinExpr(<=, Id(i), Id(n)), BlockStmt([AssignStmt(Id(fact), BinExpr(*, Id(fact), Id(i))), AssignStmt(Id(i), BinExpr(+, Id(i), IntegerLit(1)))])), ReturnStmt(Id(fact))])))]))
+	VarDecl(x, IntegerType, IntegerLit(5))
+	VarDecl(y, FloatType, FloatLit(2.0))
+	VarDecl(result, FloatType, FloatLit(0.0))
+	FuncDecl(main, VoidType, [], None, BlockStmt([VarDecl(i, IntegerType, IntegerLit(0)), WhileStmt(BinExpr(<=, Id(i), Id(x)), BlockStmt([IfStmt(BinExpr(==, BinExpr(%, Id(i), IntegerLit(2)), IntegerLit(0)), BlockStmt([AssignStmt(Id(result), BinExpr(+, Id(result), BinExpr(/, Id(y), FuncCall(factorial, [Id(i)]))))]), BlockStmt([AssignStmt(Id(result), BinExpr(-, Id(result), BinExpr(/, Id(y), FuncCall(factorial, [Id(i)]))))])), AssignStmt(Id(i), BinExpr(+, Id(i), IntegerLit(1)))])), CallStmt(printf, StringLit(The result of the series is %.2f.\n), Id(result))]))
+])

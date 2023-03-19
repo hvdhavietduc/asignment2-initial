@@ -1,0 +1,9 @@
+ test: function integer (){
+                i:integer=1;
+                do {
+                    i=i+1;
+                    a,b,c: integer =1,2,3;
+                }
+                while(i<10);
+                return i;
+            }

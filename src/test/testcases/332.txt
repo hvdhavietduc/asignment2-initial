@@ -1,0 +1,7 @@
+ square : function integer(a:integer){
+            return a*a;
+            }
+            main: function integer (b:integer) inherit square{
+            b=square(5);
+            return b;
+            }

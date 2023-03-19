@@ -1,0 +1,9 @@
+Program([
+	VarDecl(a, IntegerType, IntegerLit(123))
+	VarDecl(b, IntegerType, IntegerLit(456))
+	VarDecl(s1, StringType, StringLit(gia huy))
+	VarDecl(s2, StringType, StringLit(thuc tap))
+	VarDecl(s3, StringType, StringLit(thanh cong))
+	FuncDecl(inc, IntegerType, [Param(n, IntegerType), Param(delta, IntegerType)], None, BlockStmt([AssignStmt(Id(n), BinExpr(+, Id(n), Id(delta))), ReturnStmt(Id(n))]))
+	FuncDecl(main, VoidType, [], None, BlockStmt([VarDecl(s3, StringType, BinExpr(::, Id(s1), Id(s2))), IfStmt(BinExpr(!=, Id(n), IntegerLit(123)), ReturnStmt())]))
+])

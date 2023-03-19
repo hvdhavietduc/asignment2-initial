@@ -1,0 +1,7 @@
+ main:function void(){
+                printString("Ten cua ban la gi");
+                age:integer=readInteger();
+                printString("Tuoi cua ban la: ");
+                printInteger(age);
+                return;
+            } 

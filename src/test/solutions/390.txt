@@ -1,0 +1,3 @@
+Program([
+	FuncDecl(learningtofly, IntegerType, [], None, BlockStmt([ForStmt(AssignStmt(Id(i), UnExpr(-, FuncCall(foo, []))), BinExpr(<, Id(i), IntegerLit(10)), BinExpr(+, Id(i), FloatLit(3e-10)), BlockStmt([AssignStmt(Id(a), UnExpr(-, UnExpr(-, UnExpr(-, Id(a)))))]))]))
+])

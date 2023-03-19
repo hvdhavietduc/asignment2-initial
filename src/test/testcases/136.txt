@@ -1,0 +1,45 @@
+a: integer = 2;
+                    b: integer = 5;
+                    c: float = 3.14159;
+
+                    func1: function auto(x: integer, y: integer) {
+                        z: integer;
+                        z = (x + y) * (x - y);
+                        return z;
+                    }
+
+                    func2: function auto(x: float, y: float, z: float) {
+                        a: float;
+                        b: float;
+                        c: float;
+                        a = x * y * z;
+                        b = x + y + z;
+                        c = x / y;
+                        return (a + b + c);
+                    }
+
+                    main: function void() {
+                        result1: integer;
+                        result2: float;
+                        result1 = func1(a, b);
+                        result2 = func2(c, result1, c);
+                        if ((result1 > 10) && (result2 < 100)) {
+                            printf("Both results are within the desired range.");
+                        } else if (result1 > 10) {
+                            printf("The first result is within the desired range, but the second is not.");
+                        } else if (result2 < 100) {
+                            printf("The second result is within the desired range, but the first is not.");
+                        } else {
+                            printf("Neither result is within the desired range.");
+                        }
+                        i: integer = 0;
+                        while (i < 5) {
+                            j: integer = i;
+                            while (j < 5) {
+                                printf("%d, %d\n", i, j);
+                                j = j + 1;
+                            }
+                            i = i + 1;
+                        }
+                    } 
+                    

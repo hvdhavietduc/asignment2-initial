@@ -1,0 +1,4 @@
+Program([
+	FuncDecl(square, IntegerType, [Param(a, IntegerType)], None, BlockStmt([ReturnStmt(BinExpr(*, Id(a), Id(a)))]))
+	FuncDecl(main, IntegerType, [Param(b, IntegerType)], square, BlockStmt([AssignStmt(Id(b), FuncCall(square, [IntegerLit(5)])), ReturnStmt(Id(b))]))
+])

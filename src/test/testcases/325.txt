@@ -1,0 +1,11 @@
+a:array [2,3] of integer;
+            initArray:function array [2,3] of integer(){
+                k:integer=1;
+                for(i=1,i<=1,i+1)
+                    for(j=1,j<=2,j+1)
+                    {
+                        a[i,j]=k;
+                        k=k+1;
+                    }
+                return a;
+            }

@@ -1,0 +1,1 @@
+Func_1: function string (out t: integer, inherit z: float) inherit zzz {}

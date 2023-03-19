@@ -1,0 +1,31 @@
+
+         isValid : function boolean (s : string) {
+             if (length(s) % 2 != 0) {
+                 return false;
+             }
+             for (i = 0, i < length(s), i + 1) {
+                 if (s[i] == "(") {
+                     push(s[i]);
+                 } else if (s[i] == ")") {
+                     if (top() == "(") {
+                         pop();
+                     } else {
+                         return false;
+                     }
+                 }
+             }
+             if (isEmpty()) {
+                 return true;
+             } else {
+                 return false;
+             }
+         }
+         main: function void () {
+             s = "((()))";
+             if (isValid(s)) {
+                 printString("s is valid.");
+             } else {
+                 printString("s is not valid.");
+             }
+         }
+         

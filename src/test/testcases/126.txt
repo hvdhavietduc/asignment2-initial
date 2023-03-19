@@ -1,0 +1,36 @@
+a: boolean = foo(1);
+                main: function void() {
+                    for (i = 0, i < 5,  i + 1) {
+                        for (j = 0, j < 3, j + 1) {
+                            arr[i, j] = func(i, j);
+                        }
+                    }
+                    for (i = 0, i < 2,  i + 1) {
+                        for (j = 0, j < 3,  j + 1) {
+                            printf("%d ", arr[i, j]);
+                        }
+                        printf("\n");
+                    }
+                    a: integer = 1;
+                    while (a < 10) {
+                        a = a + 1;
+                        if (a % 2 == 0) {
+                            continue;
+                        }
+                        printf("%d\n", a);
+                        for (i = 0, i < a, i + 1) {
+                            if (i % 2 == 0) {
+                                arr[0, i] = func(a, i);
+                            } else {
+                                arr[1, i] = func(a, i);
+                            }
+                        }
+                        for (i = 0, i < 2, i + 1) {
+                            for (j = 0, j < a,  j + 1) {
+                                printf("%d ", arr[i, j]);
+                            }
+                            printf("\n");
+                        }
+                        printf("\n");
+                    }
+                }

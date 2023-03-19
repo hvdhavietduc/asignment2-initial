@@ -1,0 +1,4 @@
+ a,b,c:float=3.7,2e3,1.e10;
+            /*
+                Comment Multi;
+            */  

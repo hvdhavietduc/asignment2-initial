@@ -1,0 +1,27 @@
+a: integer = 1;
+                    b: float = 2.5;
+                    c: string = "Hello";
+                    arr: array [2, 3] of integer ;
+
+                    func: function auto(x: integer, y: integer) {
+                        z: integer;
+                        z = x + y;
+                        return z;
+                    }
+
+                    main: function void() {
+                        result: integer;
+                        result = func(2, 3);
+                        if (result > 5) {
+                            printf("The result is greater than 5.");
+                        } else {
+                            printf("The result is less than or equal to 5.");
+                        }
+                        for(i=0,i<3,i+1){
+                            a= a+1;
+                        }
+                        while (a < 10) {
+                            a = a + 1;
+                        }
+
+                    }

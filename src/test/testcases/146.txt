@@ -1,0 +1,1 @@
+lisa: array[2] of integer =  -1 + 2;

@@ -1,0 +1,4 @@
+Program([
+	FuncDecl(removeDuplicates, IntegerType, [Param(nums, ArrayType([5], IntegerType))], None, BlockStmt([IfStmt(BinExpr(==, FuncCall(length, [Id(nums)]), IntegerLit(0)), BlockStmt([ReturnStmt(IntegerLit(0))])), AssignStmt(Id(i), IntegerLit(0)), ForStmt(AssignStmt(Id(j), IntegerLit(1)), BinExpr(<, Id(j), FuncCall(length, [Id(nums)])), BinExpr(+, Id(j), IntegerLit(1)), BlockStmt([IfStmt(BinExpr(!=, ArrayCell(nums, [Id(j)]), ArrayCell(nums, [Id(i)])), BlockStmt([AssignStmt(Id(i), BinExpr(+, Id(i), IntegerLit(1))), AssignStmt(ArrayCell(nums, [Id(i)]), ArrayCell(nums, [Id(j)]))]))])), ReturnStmt(BinExpr(+, Id(i), IntegerLit(1)))]))
+	FuncDecl(main, VoidType, [], None, BlockStmt([AssignStmt(Id(nums), ArrayLit([IntegerLit(1), IntegerLit(1), IntegerLit(2)])), CallStmt(printInt, FuncCall(removeDuplicates, [Id(nums)]))]))
+])

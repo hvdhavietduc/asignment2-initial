@@ -1,0 +1,3 @@
+Program([
+	FuncDecl(func, BooleanType, [], None, BlockStmt([CallStmt(readBoolean, )]))
+])

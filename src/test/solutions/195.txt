@@ -1,0 +1,3 @@
+Program([
+	FuncDecl(Func_1, StringType, [OutParam(t, IntegerType), InheritParam(z, FloatType)], zzz, BlockStmt([]))
+])

@@ -1,0 +1,5 @@
+a: boolean = foo(1);
+                   a: function integer(){
+                        return 5;
+                   } 
+                    

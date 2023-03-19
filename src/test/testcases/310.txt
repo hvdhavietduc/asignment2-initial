@@ -1,0 +1,6 @@
+main: function void () {
+                a:integer=4;
+                if(a==4) return;
+                else a=a+5;
+                return;
+            }

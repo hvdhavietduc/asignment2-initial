@@ -1,0 +1,4 @@
+Program([
+	FuncDecl(sum, IntegerType, [Param(a, IntegerType), Param(b, IntegerType)], None, BlockStmt([ReturnStmt(BinExpr(+, Id(a), Id(b)))]))
+	FuncDecl(main, VoidType, [], None, BlockStmt([CallStmt(print, FuncCall(sum, [IntegerLit(1), IntegerLit(2)]))]))
+])

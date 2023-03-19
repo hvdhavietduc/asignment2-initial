@@ -1,0 +1,24 @@
+2023.03.05 22:43:32 INFO  Started: Metals version 0.11.11 in workspace 'D:\HK222-2023-BKHCM\PPL\asignment2-initial' for client Visual Studio Code 1.76.0.
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/C:/Users/Lenovo/AppData/Local/Coursier/cache/v1/https/repo1.maven.org/maven2/com/outr/scribe-slf4j_2.13/3.11.0/scribe-slf4j_2.13-3.11.0.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+2023.03.05 22:43:33 INFO  time: initialize in 0.82s
+2023.03.05 22:43:33 WARN  Build server is not auto-connectable.
+2023.03.05 22:43:33 WARN  no build tool detected in workspace 'D:\HK222-2023-BKHCM\PPL\asignment2-initial'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2023.03.05 22:43:33 WARN  no build target for: D:\HK222-2023-BKHCM\PPL\asignment2-initial\src\main\mt22\utils\te.scala
+2023.03.05 22:44:12 INFO  no build target found for D:\HK222-2023-BKHCM\PPL\asignment2-initial\src\main\mt22\utils\te.scala. Using presentation compiler with project's scala-library version: 3.2.2
+2023.03.05 22:44:14 INFO  time: code lens generation in 40s
+2023.03.05 22:46:43 WARN  no build target for: D:\HK222-2023-BKHCM\PPL\asignment2-initial\src\main\mt22\utils\te.scala
+2023.03.05 22:46:44 WARN  no build target for: D:\HK222-2023-BKHCM\PPL\asignment2-initial\src\main\mt22\utils\te.scala
+2023.03.05 22:46:56 WARN  no build target for: D:\HK222-2023-BKHCM\PPL\asignment2-initial\src\main\mt22\utils\te.scala
+2023.03.05 22:46:59 WARN  no build target for: D:\HK222-2023-BKHCM\PPL\asignment2-initial\src\main\mt22\utils\te.scala
+Mar 06, 2023 12:04:38 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Mar 06, 2023 12:04:40 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2023.03.06 00:42:00 INFO  Shutting down server
+2023.03.06 00:42:00 INFO  shutting down Metals
+2023.03.06 00:42:00 INFO  Exiting server

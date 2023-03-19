@@ -1,0 +1,5 @@
+ x,y,z: integer = 1,2,3;
+            /*
+                Comment Multi;
+            */
+            // Comment

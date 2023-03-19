@@ -1,0 +1,6 @@
+main:function void(){
+                printString("Hay nhap mon hoc ma ban yeu thich");
+                a:float=readFloat();
+                printString("So diem ma ban muon dat duoc cua mon hoc do");
+                return;
+            }

@@ -1,0 +1,17 @@
+
+         flatten : function array[10] of integer (arr : array[10] of integer) {
+             result : array[10] of integer;
+             for (i = 0, i < length(arr), i + 1) {
+                 if (typeof(arr[i]) == "array") {
+                     result = result + flatten(arr[i]);
+                 } else {
+                     result = result + arr[i];
+                 }
+             }
+             return result;
+         }
+         main: function void () {
+             arr : array [10] of integer = {1, 2, {3, 4}, 5, 6};
+             print(flatten(arr));
+         }
+         

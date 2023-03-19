@@ -1,0 +1,4 @@
+Program([
+	FuncDecl(findCelebrity, IntegerType, [Param(n, IntegerType)], None, BlockStmt([AssignStmt(Id(candidate), IntegerLit(0)), ForStmt(AssignStmt(Id(i), IntegerLit(1)), BinExpr(<, Id(i), Id(n)), BinExpr(+, Id(i), IntegerLit(1)), BlockStmt([IfStmt(FuncCall(knows, [Id(candidate), Id(i)]), BlockStmt([AssignStmt(Id(candidate), Id(i))]))])), ForStmt(AssignStmt(Id(i), IntegerLit(0)), BinExpr(<, Id(i), Id(n)), BinExpr(+, Id(i), IntegerLit(1)), BlockStmt([IfStmt(BinExpr(&&, BinExpr(!=, Id(i), Id(candidate)), BinExpr(||, FuncCall(knows, [Id(candidate), Id(i)]), UnExpr(!, FuncCall(knows, [Id(i), Id(candidate)])))), BlockStmt([ReturnStmt(UnExpr(-, IntegerLit(1)))]))])), ReturnStmt(Id(candidate))]))
+	FuncDecl(main, VoidType, [], None, BlockStmt([AssignStmt(Id(n), IntegerLit(2)), CallStmt(printInt, FuncCall(findCelebrity, [Id(n)]))]))
+])

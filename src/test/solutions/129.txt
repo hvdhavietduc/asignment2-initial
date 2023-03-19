@@ -1,0 +1,6 @@
+Program([
+	VarDecl(a, IntegerType, IntegerLit(1))
+	VarDecl(b, IntegerType, IntegerLit(2))
+	FuncDecl(gcd, AutoType, [Param(x, IntegerType), Param(y, IntegerType)], None, BlockStmt([WhileStmt(BinExpr(!=, Id(y), IntegerLit(0)), BlockStmt([VarDecl(r, IntegerType, BinExpr(%, Id(x), Id(y))), AssignStmt(Id(x), Id(y)), AssignStmt(Id(y), Id(r))])), ReturnStmt(Id(x))]))
+	FuncDecl(main, VoidType, [], None, BlockStmt([VarDecl(g, IntegerType, FuncCall(gcd, [Id(a), Id(b)])), CallStmt(printf, StringLit(The GCD of %d and %d is %d.\n), Id(a), Id(b), Id(g)), VarDecl(s, IntegerType, IntegerLit(0)), ForStmt(AssignStmt(Id(i), IntegerLit(1)), BinExpr(<=, Id(i), IntegerLit(100)), BinExpr(+, Id(i), IntegerLit(1)), BlockStmt([AssignStmt(Id(s), BinExpr(+, Id(s), Id(i)))])), CallStmt(printf, StringLit(The sum of the first 100 integers is %d.\n), Id(s)), VarDecl(p, IntegerType, BinExpr(+, Id(a), Id(b))), VarDecl(q, IntegerType, BinExpr(-, Id(a), Id(b))), VarDecl(r, IntegerType, BinExpr(*, Id(a), Id(b))), VarDecl(result, FloatType, BinExpr(/, BinExpr(*, Id(p), Id(q)), Id(r))), CallStmt(printf, StringLit(The value of (a + b) * (a - b) / (a * b) is %.2f.\n), Id(result))]))
+])

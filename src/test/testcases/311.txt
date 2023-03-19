@@ -1,0 +1,3 @@
+ sum: function integer (inherit a:integer,out b:integer) {
+                return a+b;
+            }

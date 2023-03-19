@@ -1,0 +1,4 @@
+Program([
+	FuncDecl(fact, IntegerType, [Param(n, IntegerType)], None, BlockStmt([IfStmt(BinExpr(==, Id(n), IntegerLit(1)), ReturnStmt(Id(n)), ReturnStmt(BinExpr(*, Id(n), FuncCall(fact, [BinExpr(-, Id(n), IntegerLit(1))]))))]))
+	FuncDecl(main, VoidType, [], None, BlockStmt([VarDecl(a, IntegerType, IntegerLit(5)), IfStmt(BinExpr(>=, Id(a), IntegerLit(0)), AssignStmt(Id(a), FuncCall(fact, [IntegerLit(5)])), ReturnStmt()), ReturnStmt()]))
+])

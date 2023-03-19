@@ -1,0 +1,7 @@
+
+               main: function void () {
+                a: string = "nguyen luong gia huy";
+                printString(a);
+                return;
+           }
+                

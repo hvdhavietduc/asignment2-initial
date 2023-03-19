@@ -1,0 +1,3 @@
+  a:integer = (aa :: bb) :: cc; {
+                arr = {};
+            } 

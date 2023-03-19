@@ -1,0 +1,4 @@
+   test:function integer(inherit a:integer) inherit super_B{
+                a,b,c:float=1.5,2.5,3.5;
+                return super(x,y*z);
+            }

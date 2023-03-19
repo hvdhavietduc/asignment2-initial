@@ -1,0 +1,4 @@
+Program([
+	VarDecl(a, BooleanType, BooleanLit(True))
+	FuncDecl(inc, VoidType, [Param(x, IntegerType), InheritParam(y, IntegerType), InheritOutParam(z, AutoType)], None, BlockStmt([AssignStmt(Id(x), BinExpr(+, Id(y), Id(z))), ReturnStmt()]))
+])

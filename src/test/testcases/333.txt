@@ -1,0 +1,4 @@
+ test: function float (){
+            a: float = 5.5;
+            return a/1.2;
+            }

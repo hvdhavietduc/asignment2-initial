@@ -1,0 +1,17 @@
+
+fibonacci: function integer(n: integer) {
+    if (n <= 1) {
+        return n;
+    } else {
+        return fibonacci(n - 1) + fibonacci(n - 2);
+    }
+}
+
+// Main function
+main: function void() {
+
+    print("Enter n: ");
+    n = readInt();
+
+    print("Fibonacci number at position ", n, " is: ", fibonacci(n));
+}

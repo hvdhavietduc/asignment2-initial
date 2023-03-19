@@ -1,0 +1,6 @@
+Program([
+	VarDecl(sum, IntegerType, IntegerLit(0))
+	VarDecl(i, IntegerType, IntegerLit(0))
+	VarDecl(count, IntegerType, IntegerLit(0))
+	FuncDecl(main, VoidType, [], None, BlockStmt([WhileStmt(BinExpr(<, Id(count), IntegerLit(50)), BlockStmt([IfStmt(BinExpr(==, BinExpr(%, Id(i), IntegerLit(2)), IntegerLit(0)), BlockStmt([AssignStmt(Id(sum), BinExpr(+, Id(sum), Id(i))), AssignStmt(Id(count), BinExpr(+, Id(count), IntegerLit(1)))])), AssignStmt(Id(i), BinExpr(+, Id(i), IntegerLit(1)))])), CallStmt(print, StringLit(The sum of the first 50 even numbers is: ), Id(sum))]))
+])

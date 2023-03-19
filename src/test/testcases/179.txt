@@ -1,0 +1,17 @@
+
+         change : function integer (amount : integer, coins : array[4] of integer) {
+             dp : array[5] of integer;
+             dp[0] = 1;
+             for (i = 0, i < length(coins), i + 1) {
+                 for (j = coins[i], j <= amount, j + 1) {
+                     dp[j] = dp[j] + dp[j - coins[i]];
+                 }
+             }
+             return dp[amount];
+         }
+         main: function void () {
+             amount = 5;
+             coins = {1, 2, 5};
+             printInt(change(amount, coins));
+         }
+         

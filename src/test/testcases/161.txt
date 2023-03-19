@@ -1,0 +1,17 @@
+contains: function boolean (arr: array [10] of integer, target: integer) {
+    for (i = 0, i < 10, i + 1) {
+        if (arr[i] == target) {
+            return true;
+        }
+    }
+    return false;
+}
+
+main: function void () {
+    arr = {5, 2, 8, 4, 9, 1, 3, 7, 6, 0};
+    if (contains(arr, 4)) {
+        printString("The array contains the target value");
+    } else {
+        printString("The array does not contain the target value");
+    }
+}

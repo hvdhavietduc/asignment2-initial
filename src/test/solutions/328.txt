@@ -1,0 +1,4 @@
+Program([
+	VarDecl(a, BooleanType, BooleanLit(True))
+	FuncDecl(test, IntegerType, [], None, BlockStmt([VarDecl(b, IntegerType), IfStmt(BinExpr(==, Id(a), BooleanLit(True)), AssignStmt(Id(b), IntegerLit(10)), AssignStmt(Id(b), IntegerLit(20))), ReturnStmt(Id(b))]))
+])

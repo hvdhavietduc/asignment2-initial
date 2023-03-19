@@ -1,0 +1,15 @@
+ a,b,c: integer = 1,2,3;
+            /*
+            div:function integer(a:float, b:float)
+            {
+                return a/b;
+            }
+            sub:function integer(a:float, b:float)
+            {
+                return a-b;
+            }*/
+            main:function integer(inherit a:integer) inherit b{
+                a:integer=4;//Comment comment
+                a,b,c:float=1.2,1.2,1.3;
+                return super(1,2);
+            }

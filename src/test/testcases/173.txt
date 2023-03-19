@@ -1,0 +1,21 @@
+
+         firstNonRepeating : function string (str : string) {
+             for (i = 0, i < length(str), i + 1) {
+                 found = false;
+                 for (j = 0, j < length(str), j + 1) {
+                     if ((i != j) && (str[i] == str[j])) {
+                         found = true;
+                         break;
+                     }
+                 }
+                 if (!found) {
+                     return str[i];
+                 }
+             }
+             return "";
+         }
+         main: function void () {
+             str = "Hello World!";
+             printStr(firstNonRepeating(str));
+         }
+         

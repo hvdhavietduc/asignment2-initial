@@ -1,0 +1,4 @@
+main: function integer () {
+            a:integer = 2;
+            return a;
+        }

@@ -1,0 +1,3 @@
+Program([
+	FuncDecl(sumNumbers, IntegerType, [], None, BlockStmt([AssignStmt(Id(sum), IntegerLit(0)), AssignStmt(Id(i), IntegerLit(1)), DoWhileStmt(BinExpr(<=, Id(i), Id(n)), BlockStmt([AssignStmt(Id(sum), BinExpr(+, Id(sum), Id(i))), AssignStmt(Id(i), BinExpr(+, Id(i), IntegerLit(1)))])), ReturnStmt(Id(sum))]))
+])

@@ -1,0 +1,3 @@
+Program([
+	FuncDecl(oo, IntegerType, [], None, BlockStmt([DoWhileStmt(BinExpr(<, Id(i), IntegerLit(10)), BlockStmt([VarDecl(a, StringType, StringLit(My name is Chinh)), VarDecl(b, FloatType, BinExpr(::, StringLit(U are U), StringLit(I am Me))), AssignStmt(Id(i), BinExpr(+, Id(i), IntegerLit(1)))]))]))
+])

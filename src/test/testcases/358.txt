@@ -1,0 +1,4 @@
+ test: function integer(){
+            a:integer =5;
+            return a;
+           } 

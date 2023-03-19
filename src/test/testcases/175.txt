@@ -1,0 +1,16 @@
+
+                main: function void () {
+            if (a > 10) {
+                if (b > 10) {
+                    printFloat(1.2);
+                }
+                else {
+                    readString();
+                }
+            }
+            else {
+                s = "Hello";
+                printString(s);
+            }
+        }
+        

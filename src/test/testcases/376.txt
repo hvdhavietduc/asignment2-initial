@@ -1,0 +1,22 @@
+a : boolean = true;
+                add: function void(i: float) {
+                    return i;
+                }
+                inc: function void(out n: integer, inherit delta: integer, inherit out hallo: auto) inherit add{
+                    n = n + delta + hallo;
+                    n = n - delta - hallo;
+                    n = n * delta * hallo;
+                    /* multiple
+                        line
+                        comment
+                    */
+                    n = n / delta / hallo;
+                    n = true;
+                    n = n % 1 + hallo - 1+2;
+                    n = n && delta && hallo;
+                    n = n || delta || hallo;
+                    n = n :: n;
+                    n = n + add(delta);
+                    n = a[1, a[1, a[1,2]]]; // n[1,2] = 2 => n = a[1,2];
+                    return n;
+                    }

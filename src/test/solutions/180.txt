@@ -1,0 +1,4 @@
+Program([
+	FuncDecl(twoSum, ArrayType([2], IntegerType), [Param(nums, ArrayType([4], IntegerType)), Param(target, IntegerType)], None, BlockStmt([AssignStmt(Id(n), FuncCall(length, [Id(nums)])), ForStmt(AssignStmt(Id(i), IntegerLit(0)), BinExpr(<, Id(i), Id(n)), BinExpr(+, Id(i), IntegerLit(1)), BlockStmt([ForStmt(AssignStmt(Id(j), BinExpr(+, Id(i), IntegerLit(1))), BinExpr(<, Id(j), Id(n)), BinExpr(+, Id(j), IntegerLit(1)), BlockStmt([IfStmt(BinExpr(==, BinExpr(+, ArrayCell(nums, [Id(i)]), ArrayCell(nums, [Id(j)])), Id(target)), BlockStmt([ReturnStmt(ArrayLit([Id(i), Id(j)]))]))]))])), ReturnStmt(ArrayLit([UnExpr(-, IntegerLit(1)), UnExpr(-, IntegerLit(1))]))]))
+	FuncDecl(main, VoidType, [], None, BlockStmt([AssignStmt(Id(nums), ArrayLit([IntegerLit(2), IntegerLit(7), IntegerLit(11), IntegerLit(15)])), AssignStmt(Id(target), IntegerLit(9)), CallStmt(printInt, FuncCall(twoSum, [Id(nums), Id(target)]))]))
+])

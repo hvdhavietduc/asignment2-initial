@@ -1,0 +1,3 @@
+Program([
+	FuncDecl(main, VoidType, [], None, BlockStmt([CallStmt(printString, StringLit(Ten cua ban la gi)), VarDecl(age, IntegerType, FuncCall(readInteger, [])), CallStmt(printString, StringLit(Tuoi cua ban la: )), CallStmt(printInteger, Id(age)), ReturnStmt()]))
+])

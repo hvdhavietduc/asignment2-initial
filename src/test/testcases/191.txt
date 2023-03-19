@@ -1,0 +1,1 @@
+x, y, z: array [2] of integer = -1.2e8, {1,2}, true;

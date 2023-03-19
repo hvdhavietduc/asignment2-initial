@@ -1,0 +1,3 @@
+Program([
+	FuncDecl(test, IntegerType, [], None, BlockStmt([VarDecl(a, IntegerType, IntegerLit(5)), ReturnStmt(Id(a))]))
+])

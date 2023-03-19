@@ -1,0 +1,3 @@
+Program([
+	FuncDecl(calculateExpApproximation, FloatType, [Param(n, IntegerType)], None, BlockStmt([AssignStmt(Id(result), FloatLit(1.0)), AssignStmt(Id(term), FloatLit(1.0)), ForStmt(AssignStmt(Id(i), IntegerLit(1)), BinExpr(<=, Id(i), Id(n)), BinExpr(+, Id(i), IntegerLit(1)), BlockStmt([AssignStmt(Id(term), BinExpr(/, FloatLit(1.0), Id(n))), AssignStmt(Id(result), Id(term))])), ReturnStmt(Id(result))]))
+])

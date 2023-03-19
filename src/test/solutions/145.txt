@@ -1,0 +1,4 @@
+Program([
+	VarDecl(x, FloatType, FuncCall(writeFloat, [FloatLit(1.0)]))
+	VarDecl(a, IntegerType, UnExpr(-, FloatLit(1.5)))
+])

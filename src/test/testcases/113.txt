@@ -1,0 +1,10 @@
+a: integer = 10.0;
+            main: function void(){
+                if(a>5){
+                    x = a +5;
+                }
+                else {
+                    x = a +6;
+                }
+            }
+        
